@@ -3,7 +3,7 @@
 const CategoryProduct = () => {
     return (
         <section >
-            <div className="flex  justify-center  mt-32">
+            <div className="flex  justify-center  mt-16">
                 <div className="grid  grid-cols-4 my-12 mr-2">
 
                     <button className=" ml-2 py-1 bg-orange-600 text-white  rounded-full lg:px-12 px-2  border-gray-600">All category</button>

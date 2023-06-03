@@ -2,9 +2,8 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
-import img1 from '../Image/pexels-ksenia-chernaya-3965539.jpg'
-import img2 from '../Image/pexels-rachel-claire-5490969.jpg'
-import img3 from '../Image/pexels-mart-production-7679720.jpg'
+import img1 from '../Image/pexels-rachel-claire-5490969.jpg'
+import img2 from '../Image/pexels-mart-production-7679720.jpg'
 
 
 const navigation = [
@@ -19,7 +18,7 @@ export default function Example() {
 
 
   return (
-    <div className="bg-white" style={{ backgroundImage: `url(${img3})`, backgroundSize: 'cover' }}
+    <div className="bg-white h-[800px]" style={{ backgroundImage: `url(${img1})`, backgroundSize: 'cover' }}
     >
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -38,7 +37,7 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12" >
             {navigation.map((item) => (
-              <Link key={item.name} to={item.to} className="text-lg mouse font-semibold leading-6 text-gray-700">
+              <Link key={item.name} to={item.to} className="inline-block rounded border border-current px-8 py-3 text-sm font-bold  text-[#000000] transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500">
                 {item.name}
               </Link>
             ))}
@@ -98,13 +97,13 @@ export default function Example() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight 4 sm:text-6xl">
+            {/* <h1 className="text-4xl font-bold tracking-tight 4 sm:text-6xl">
               Data to enrich your online business
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            </h1> */}
+            {/* <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
               fugiat veniam occaecat fugiat aliqua.
-            </p>
+            </p> */}
 
           </div>
         </div>
